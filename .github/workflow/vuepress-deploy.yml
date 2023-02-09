@@ -1,0 +1,18 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: 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
+        TARGET_REPO: jiayechao/teamsite
+        TARGET_BRANCH: gh-pages
+        BUILD_SCRIPT: npm && npm run docs:build
+        BUILD_DIR: docs/.vuepress/dist
+        CNAME: https://www.xxx.com

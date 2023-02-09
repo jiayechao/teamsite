@@ -1,0 +1,77 @@
+@import('palette')
+
+p,h1,h2,h3,h4,h5
+  margin 0
+
+ul, ol
+  padding-left 0
+  list-style none
+
+a
+  color $textColor
+  &:hover
+    color $accentColor
+
+.btn
+    display inline-block
+    margin-bottom 0
+    font-weight normal
+    text-align center
+    vertical-align middle
+    -ms-touch-action manipulation
+    touch-action manipulation
+    cursor pointer
+    background-image none
+    border 1px solid transparent
+    white-space nowrap
+    padding 6px 12px
+    font-size 14px
+    line-height 1.42857143
+    border-radius 4px
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+.more-wrap
+  text-align center
+  padding 10px
+  .btn
+    background-color #e1e1e1
+    color #616161
+    border-color #ccc
+    font-size 14px
+    font-weight 400
+    transition all 0.3s
+    &:hover
+      border-color #aaa
+      color #494d55
+      background-color #f9f9f9
+
+
+
+/*============= 覆盖vuepress原有的样式 ====================*/
+.navbar
+  background-color rgba(0, 0, 0, 0.4)
+  border-bottom none
+  transition all .3s
+  .logo
+    margin-right 0!important
+  .site-name
+    color #fff!important
+  .links
+    background-color transparent!important
+  .nav-links a
+    color: rgba(255,255,255,0.65)
+    font-weight 400
+
+
+.home
+  padding 0!important
+  max-width 100%!important
+
+
+@media (min-width: 719px)
+  .nav-links a:hover, .nav-links a.router-link-active
+    color $accentColor!important
+    border-bottom none !important
+
