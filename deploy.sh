@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:jiayechao/teamsite.github.io.git master
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# 如果发布到 https://jiayechao.github.io/teamsite
 git push -f git@github.com:jiayechao/teamsite.git master:gh-pages
 
 cd -

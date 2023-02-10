@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
+      uses: jenkey2011/vuepress-deploy@v1.8.1
       env:
         ACCESS_TOKEN: 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
         TARGET_REPO: jiayechao/teamsite
