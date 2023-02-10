@@ -101,7 +101,12 @@ footer: MIT Licensed | Copyright © 2023 Jia Yechao
 </div>
 
 <script>
-  new WOW().init();
+export default {
+  mounted () {
+    new window.WOW().init();
+  }
+}
+  
 </script>
 
 <style lang="styl" scoped>
