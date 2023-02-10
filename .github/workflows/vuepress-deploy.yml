@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: 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
         TARGET_REPO: jiayechao/teamsite
         TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: npm && npm run docs:build
+        BUILD_SCRIPT: npm install && npm run docs:build
         BUILD_DIR: docs/.vuepress/dist
