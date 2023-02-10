@@ -3,7 +3,7 @@
     <el-row :gutter="30">
       <el-col class="product-wrap" :xs="24" :sm="12" :md="6" v-for="(item, index) in products" :key="index">
         <a :style="{backgroundColor: item.bgColor}" class="product-item" :href="item.url" target="_blank">
-          <img class="logo" :src="item.logo" alt="">
+          <img class="logo" :src="$withBase(item.logo)" alt="">
           <span class="title">{{ item.title }}</span>
           <span class="sub-title">{{ item.subTitle }}</span>
           <div class="light"></div>

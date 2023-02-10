@@ -1,7 +1,7 @@
 <template>
   <el-carousel class="banner" trigger="click" height="500px" arrow="never" @change="change">
       <el-carousel-item v-for="(item, index) in bannerData" :key="index">
-        <div class="banner-item" :style="{backgroundImage: 'url(' + item.img + ')'}">
+        <div class="banner-item" :style="{backgroundImage: 'url(' + $withBase(item.img) + ')'}">
           <a v-if="active === index" class="banner-info" :href="item.url" target="_blank">
             <p class="wow title" :class="item.type === 'lr' ? 'fadeInRight' : 'fadeInDown'">{{ item.title }}</p>
             <p class="wow sub-title" :class="item.type === 'lr' ? 'fadeInLeft' : 'fadeInUp'">{{ item.subTitle }}</p>

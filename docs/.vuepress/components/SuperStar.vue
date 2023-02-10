@@ -4,7 +4,7 @@
       <el-col class="star-wrap" :sm="24" :md="8" v-for="(item, index) in stars" :key="index">
         <a class="star-item" :href="item.url" target="_blank">
           <div class="info">
-            <img class="avatar" :src="item.avatar" alt="">
+            <img class="avatar" :src="$withBase(item.avatar)" alt="">
             <p class="name">{{ item.name }}</p>
           </div>
           <p class="desc">{{ item.desc }}</p>
