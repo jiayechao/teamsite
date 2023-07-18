@@ -4,6 +4,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
     "babel-plugin-component": "^1.1.1",
     "vuepress": "^1.9.7"
   },
